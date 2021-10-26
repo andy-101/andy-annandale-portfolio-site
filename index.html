@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Birthstone+Bounce:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <link rel="icon" href="images/icons/favicon.png" type="image/x-icon" sizes="16x16">
+
+</head>
+<body>
+
+<!-- Header -->
+    <header>
+        <div class="nav-btn text-right p-6 fixed z-50 top-0 right-0 bg-green-500 rounded-bl-lg">
+            <div class="nav-open-btn cursor-pointer transform hover:scale-110">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+            </div>
+            <div class="nav-close-btn cursor-pointer transform hover:scale-110 hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+            </div>
+        </div>
+        <nav class="nav fixed top-0 right-0 min-h-screen bg-gradient-to-br from-gray-900 to-gray-700  w-72 rounded-l grid-cols-1 text-white hidden z-40">
+            <div></div>
+            <div class="text-center">
+                <a href="">
+                    <span class="font-britishBounce font-black text-6xl">
+                        A
+                    </span>
+                </a>
+            </div>
+            <div class="justify-center">
+                <ul class="text-center">
+                    <li class="my-4">
+                        <a href="index.html" class="text-green-500 text-xl font-bold">Home</a>
+                    </li>
+                    <!-- <li class="my-4">
+                        <a href="page-about.html" class="hover:text-green-500 transition-all delay-100 text-xl font-bold">About</a>
+                    </li> -->
+                </ul>
+            </div>
+            <div class="text-center">
+                <div class="flex justify-center">
+                    <a href="" class="transform hover:scale-110 hover:text-green-500 transition-all delay-100">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+<!-- End of header -->
+
+<!-- Hero -->
+    <section class="">
+        <div class="min-h-screen bg-gray-200 flex items-center relative">
+            <div class="container mx-auto flex justify-center">
+                <div class="text-center">
+                    <div class="text-6xl my-12 text-green-500 font-black">
+                        <h1>Andy Annandale</h1>
+                    </div>
+                    <div class="text-2xl my-12 text-blue-500 font-black">
+                        <h2>Here for you front-end needs.</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="absolute bottom-14 left-1/2 transform -translate-x-1/2" id="arrow-down">
+                <a href="#slider-section">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-down"><line x1="12" y1="5" x2="12" y2="19"></line><polyline points="19 12 12 19 5 12"></polyline></svg>
+                </a>
+            </div>
+        </div>
+    </section>
+<!-- End of hero -->
+
+<!-- Slider section -->
+    <section id="slider-section">
+        <div class="min-h-screen bg-gray-400 flex items-center">
+            <div class="max-h-screen relative">
+
+                        <button id="left-btn" class="absolute top-1/2 transform -translate-y-1/2 left-4 bg-gray-800 p-3 rounded-lg hover:scale-110">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="white" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-left"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+                        </button>
+                        <a href="" id="carousel-link">
+                            <img id="carousel" src="" alt="" class="max-h-screen w-screen">
+                        </a>
+                        <button id="right-btn" class="absolute top-1/2 transform -translate-y-1/2 right-4 bg-gray-800 p-3 rounded-lg hover:scale-110">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="white" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                        </button>
+
+                        <div class="px-6 py-4 bg-green-500 rounded-lg absolute bottom-8 left-56" id="slide-btn">
+                            <span>
+                                Click to visit website
+                            </span>
+                        </div>
+            </div>
+        </div>
+    </section>
+<!-- End of slider -->
+
+<!-- Footer -->
+    <section class="h-36 bg-gray-600 flex items-center">
+        <div class="container mx-auto">
+            <div class="flex flex-wrap justify-evenly">
+                <div>
+                    <a href="index.html">
+                        <span class="font-britishBounce font-black text-6xl text-white">
+                            A
+                        </span>
+                    </a>
+                </div>
+                <div class="transform hover:scale-110 transition-all delay-150">
+                    <a href="">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- End of footer -->
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js" integrity="sha512-eP6ippJojIKXKO8EPLtsUMS+/sAGHGo1UN/38swqZa1ypfcD4I0V/ac5G3VzaHfDaklFmQLEs51lhkkVaqg60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/anime.js"></script>
+    <script src="js/nav.js"></script>
+    <script src="js/slider.js"></script>
+
+</body>
+</html>
